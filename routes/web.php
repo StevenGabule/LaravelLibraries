@@ -18,3 +18,8 @@ Route::get('/', function () {
 Route::post('submitForm','GeneratePDF\UserDetailController@store');
 Route::get('/index','GeneratePDF\UserDetailController@index');
 Route::get('/downloadPDF/{id}','GeneratePDF\UserDetailController@downloadPDF');
+
+
+Route::get('/charts/index','Charts\CoinController@home');
+Route::get('/coins', 'Charts\CoinController@index');
+Route::post('/coins', 'Charts\CoinController@store');
