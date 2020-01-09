@@ -14,3 +14,7 @@
 Route::get('/', function () {
     return view('welcome');
 });
+
+Route::post('submitForm','GeneratePDF\UserDetailController@store');
+Route::get('/index','GeneratePDF\UserDetailController@index');
+Route::get('/downloadPDF/{id}','GeneratePDF\UserDetailController@downloadPDF');
