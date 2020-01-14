@@ -10,7 +10,7 @@
 </head>
 <body>
 <div class="container" id="app">
-    <add-coin></add-coin>  
+    <add-coin></add-coin>
     <chart-component></chart-component>
 </div>
 <script>
